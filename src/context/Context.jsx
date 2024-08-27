@@ -7,7 +7,7 @@ export const addResponseContext = createContext({})  //here we pass an empty obj
 
 export const editResponseContext = createContext({})
 
-export const isLoginAuthContext = createContext(false)
+export const isLoginAuthContext = createContext(true)
 
 
 function Context({ children }) {
@@ -16,7 +16,7 @@ function Context({ children }) {
 
   const [editResponse, setEditResponse] = useState({})
 
-  const [isLoginStatus, setIsLoginStatus] = useState(false)
+  const [isLoginStatus, setIsLoginStatus] = useState(true)
   return (
     <>
       <addResponseContext.Provider value={{ addResponse, setAddResponse }}> {/* provider tag is used to share that data. where shared data should be passed as key value pairs */}
