@@ -118,7 +118,7 @@ function EditProject({ project }) {
             toast.success("Edited Successfully")
             setEditResponse(result.data)
             handleClose()
-            set
+            
           }
           else {
             toast.error("something went wrong")
