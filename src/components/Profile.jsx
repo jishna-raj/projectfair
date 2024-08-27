@@ -140,7 +140,7 @@ function Profile() {
               <label htmlFor='pdImg'>
 
                 <input type='file' id='pdImg' style={{ display: 'none' }} onChange={(e) => setUserDetails({ ...userDetails, profile: e.target.files[0] })} />
-                {existingImage == "" ? <img src={preview ? preview : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooCX-nPSHN0kCVdUnm-eptCPvUF04YaxeHQ&s'} alt='' width={'150px'} height={'150px'} style={{ borderRadius: '50%' }} /> : <img src={preview ? preview : `${serverUrl}/uploads/${existingImage}}`} alt='' width={'250px'} height={'250px'} style={{ borderRadius: '50%' }} />}
+                {existingImage == "" ? <img src={preview ? preview : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooCX-nPSHN0kCVdUnm-eptCPvUF04YaxeHQ&s'} alt='' width={'150px'} height={'150px'} style={{ borderRadius: '50%' }} /> : <img src={preview ? preview : `${serverUrl}/uploads/${existingImage}}`} alt='no image' width={'250px'} height={'250px'} style={{ borderRadius: '50%' }} />}
               </label>
             </div>
 
